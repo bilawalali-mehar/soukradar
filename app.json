@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "hello-world",
+    "slug": "hello-world",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "edgeToEdgeEnabled": true,
+      "package": "com.meharbilawalali.helloworld"
+    },
+    "updates": {
+      "enabled": false
+    },
+    "plugins": [
+      "expo-font",
+      "expo-web-browser"
+    ]
+  }
+}
