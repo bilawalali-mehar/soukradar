@@ -1,6 +1,11 @@
 // App.jsx
+<<<<<<< HEAD
 import React from 'react';
 import { StyleSheet, Dimensions } from 'react-native';
+=======
+import React, { useRef } from 'react';
+import { View, Text, Image, StyleSheet, TouchableOpacity, Dimensions } from 'react-native';
+>>>>>>> 93d136f6e42040af1cea938952ccb1ae2481ab70
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Swiper from 'react-native-swiper';
@@ -11,9 +16,12 @@ import ForgotScreen from './forgot_password';
 import TabbarScreen from './tabbar_screen';
 import NotificationScreen from './notification_screen';
 import VerifyScreen from './verify_screen';
+<<<<<<< HEAD
 import FontLoader from './components/FontLoader';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 
+=======
+>>>>>>> 93d136f6e42040af1cea938952ccb1ae2481ab70
 const { width, height } = Dimensions.get('window');
 
 const onboardingData = [
@@ -35,13 +43,21 @@ const onboardingData = [
 ];
 
 function Onboarding({ navigation }) {
+<<<<<<< HEAD
   const swiperRef = React.useRef(null);
+=======
+  const swiperRef = useRef(null);
+>>>>>>> 93d136f6e42040af1cea938952ccb1ae2481ab70
 
   const handleNext = (index) => {
     if (index === onboardingData.length - 1) {
       navigation.replace('Login'); // Navigate to login screen
     } else {
+<<<<<<< HEAD
       swiperRef.current?.scrollBy(1);
+=======
+      swiperRef.current.scrollBy(1); // Go to next slide
+>>>>>>> 93d136f6e42040af1cea938952ccb1ae2481ab70
     }
   };
 
@@ -54,7 +70,11 @@ function Onboarding({ navigation }) {
       showsButtons={false}
     >
       {onboardingData.map((item, index) => (
+<<<<<<< HEAD
         <View key={index} style={styles.slide}>
+=======
+        <View style={styles.slide} key={index}>
+>>>>>>> 93d136f6e42040af1cea938952ccb1ae2481ab70
           <Image source={item.image} style={styles.image} resizeMode="contain" />
           <Text style={styles.title}>{item.title}</Text>
           <Text style={styles.description}>{item.description}</Text>
@@ -73,6 +93,7 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
+<<<<<<< HEAD
     <FontLoader>
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false }}>
@@ -86,6 +107,19 @@ export default function App() {
         </Stack.Navigator>
       </NavigationContainer>
     </FontLoader>
+=======
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Onboarding" component={Onboarding} />
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="CreateAccount" component={CreateAccountScreen} />
+         <Stack.Screen name="ForgotScreen" component={ForgotScreen} />
+           <Stack.Screen name="TabbarScreen" component={TabbarScreen} />
+            <Stack.Screen name="NotificationScreen" component={NotificationScreen} />
+            <Stack.Screen name="VerifyScreen" component={VerifyScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+>>>>>>> 93d136f6e42040af1cea938952ccb1ae2481ab70
   );
 }
 
@@ -97,3 +131,7 @@ const styles = StyleSheet.create({
   button: { backgroundColor: '#26A69A', paddingVertical: 12, paddingHorizontal: 50, borderRadius: 25 },
   buttonText: { color: '#fff', fontSize: 16, fontWeight: '600' },
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 93d136f6e42040af1cea938952ccb1ae2481ab70

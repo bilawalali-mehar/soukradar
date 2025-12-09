@@ -4,11 +4,23 @@
     "slug": "hello-world",
     "version": "1.0.0",
     "orientation": "portrait",
+<<<<<<< HEAD
     "userInterfaceStyle": "light",
+=======
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+>>>>>>> 93d136f6e42040af1cea938952ccb1ae2481ab70
     "ios": {
       "supportsTablet": true
     },
     "android": {
+<<<<<<< HEAD
       "edgeToEdgeEnabled": true,
       "package": "com.meharbilawalali.helloworld"
     },
@@ -18,6 +30,19 @@
     "plugins": [
       "expo-font",
       "expo-web-browser"
+=======
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font"
+>>>>>>> 93d136f6e42040af1cea938952ccb1ae2481ab70
     ]
   }
 }
